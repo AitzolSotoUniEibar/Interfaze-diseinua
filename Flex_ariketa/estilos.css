@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+
+}
+
+::after h1,
+h4,
+p {
+  margin: 0px;
+}
+
+h1,h2,h4,p{
+  color: rgb(78, 78, 78);
+  font-style: italic;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+nav div {
+  margin-bottom: 40%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.articles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/* Pie de la página */
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+footer img {
+  width: 20%;
+}
+
+.irudia{
+  width: 50%;
+  margin-top: 5%;
+}
+
+.edukia{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 40%;
+  margin-left: 5%;
+
+  border: 1px solid;
+  border-radius: 25px;
+}
+
+.copyright{
+  margin-top: 1%;
+}

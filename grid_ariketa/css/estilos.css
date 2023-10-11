@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h4,
+p {
+  margin: 0px;
+}
+
+body {
+  background-color: white;
+}
+/* Este es el contenedor General donde fijo la estructura de la rejilla o Grid */
+.container {
+  display: grid;
+  grid-template-columns: 200px repeat(3,1fr);
+  grid-template-rows: 100px repeat(2,1fr) 100px;
+}
+
+/* Cabecera de la página */
+header {
+  grid-row: 1;
+  grid-column: 1/5;
+  text-align: center;
+  border-bottom: 1px solid #666666;
+  margin-bottom: 2em;
+}
+
+/* Menú lateral */
+nav {
+  grid-column: 1;
+  grid-row: 2/4;
+}
+
+nav div {
+  margin: 1em;
+}
+
+/* Imagen grande */
+main {
+  grid-row: 2;
+  grid-column: 2/4;
+  border: 1px solid #666666;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1em;
+  margin: 1em;
+}
+
+main img {
+  width: 30%;
+  border-radius: 5px;
+}
+
+/* Resto de imágenes. Colocadas por grid-auto-flow que por defecto es row */
+article {
+  border: 1px solid #666666;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1em;
+  margin: 1em;
+}
+
+
+
+article img {
+  width: 60%;
+  border-radius: 5px;
+}
+
+
+
+/* Pie de la página */
+footer {
+ grid-row: 4;
+ grid-column: 1/5;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 100%;
+ text-align: center;
+ margin-top: 3em;
+ padding-top: 2em;
+ border-top: 1px solid #666666;
+}
+
+
+
+footer img {
+  width: 7%;
+}
